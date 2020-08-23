@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Battle 2020</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/intro.css">
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="./styles/round.css">
+  <link rel="stylesheet" href="./styles/rules.css">
+  <link rel="stylesheet" href="./styles/sponsor.css">
+  <link rel="stylesheet" href="./animation.css">
+  <link href="https://fonts.cdnfonts.com/css/palatino-linotype" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/boycott" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />      
+</head>
+<body>
+  <div class="scroll-up" id="scrollUp" onclick="topFunction()">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+  </div>
+  <header class="home-style" id="home">
+    <img src="/image/codebattle.png" class="code-battle slide-top animate__animated animate__pulse animate__infinite">
+    <div class="play">
+      <h1 class="slide-right animate__animated animate__slideInLeft">Code Battle</h1>
+      <strong>Bạn đã sẵn sàng tham chiến chưa?</strong>
+      <button>Tham chiến</button>
+    </div>
+    <nav class="navbar" id="myNavbar">
+      <a href="home" class="logo">CBVN</a>
+      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <nav class="navbar-items">
+        <a href="#home">Home</a>
+        <a href="#intro">Giới thiệu</a>
+        <a href="#rules">Thể lệ</a>
+        <a href="#round">Luật chơi</a>
+        <a href="#sponsor">Nhà tài trợ</a>
+      </nav>
+    </nav>
+  </header>
+  <section class="intro-style" id="intro">
+    <div class="intro-content">
+      <h3>Giới thiệu</h3>
+      <div class="line"></div>
+      <p
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom">
+        Code Battle 2019 dựa theo mô hình CTF (Capture the Flag – Kiến thức chuyên sâu về bảo mật
+        máy
+        tính)
+        và ACM/ICPC (ACM International Collegiate Programming Contest – Cuộc thi lập trình sinh viên
+        quốc
+        tế) lần thứ 3 được tổ chức bởi 5 câu lạc bộ tin học đến từ các trường Đại học Thăng Long,
+        Đại
+        học FPT, Đại học Khoa học tự nhiên và Học
+        viện
+        Công nghệ Bưu chính Viễn thông. <br>
+
+        Cuộc thi không chỉ nhằm nâng cao tinh thần học tập và phát triển mà bên cạnh đó còn tăng
+        cường
+        tính
+        giao lưu, kết nối, thắt chặt thêm mối quan hệ tốt đẹp giữa các bạn sinh viên của các trường.
+        <br>
+
+        Là một lập trình viên, ai cũng mang trong mình khả năng lập trình, suy nghĩ logic, cùng đam
+        mê
+        giải
+        quyết những bài toán khó. <br> Bạn đã sẵn sàng để thử sức trong một cuộc đua gay cấn, hồi
+        hộp
+        nhất từ
+        trước đến nay giữa các anh tài chưa?
+      </p>
+    </div>
+  </section>
+  <section class="rules-style" id="rules">
+    <div class="rules-content">
+      <h3>Thể lệ</h3>
+      <div class="line"></div>
+      <p data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom">
+        Các bạn sinh viên sẽ tranh đấu theo đội (3 thành viên), giải quyết các bài toán thuộc 3 dạng
+        là
+        ACM, CTF và AI trong vòng 6 giờ đồng hồ.
+      </p>
+    </div>
+  </section>
+  <section class="round-style" id="round">
+    <h3>LUẬT CHƠI</h3>
+    <div class="line"></div>
+    <div class="round-content" id="round-animation">
+      <div class="acm" data-aos="fade-up-right">
+        <i class="fas fa-code"></i>
+        <h4>ACM</h4>
+        <p>
+          Các đội chơi cần viết một đoạn mã chương trình bằng 1 trong 3
+          ngôn
+          ngữ
+          lập
+          trình C,
+          C++,
+          Java để
+          giải quyết các bài toán do BTC đưa ra.
+          <br>
+          Đội chơi submit code lên hệ thống, nếu chạy đúng tất cả các
+          testcase
+          sẽ
+          được
+          chấp
+          nhận
+          và
+          đội
+          chơi
+          ghi điểm.
+          <br>
+          Đội chơi submit code lên hệ thống, nếu chạy đúng tất cả các
+          testcase
+          sẽ
+          được
+          chấp
+          nhận
+          và
+          đội
+          chơi
+          ghi điểm.
+        </p>
+      </div>
+      <div class="ctf" data-aos="fade-up-left">
+        <i class="fas fa-code-branch"></i>
+        <h4>CTF</h4>
+        <p>
+          Đây là phần thi tài về kiến thức bảo mật, giải quyết bài toán qua
+          bất
+          kỳ
+          ngôn
+          ngữ lập
+          trình
+          nào, kỹ năng google, …. Mỗi bài toán đều có 1 xâu ký tự đặc biệt
+          là
+          đáp
+          án. <br>
+          Nhiệm vụ
+          đội
+          chơi là dựa vào những tài liệu hay thông tin từ đề bài để có thể
+          tìm
+          được
+          đáp án. <br>
+
+          Đội chơi submit đáp án lên hệ thống, nếu đúng sẽ ghi điểm.
+          <br>
+          Khác với dạng bài Algorithm, mỗi bài thuộc dạng này sẽ chỉ có 1
+          mức
+          điểm
+          giữ
+          nguyên
+          xuyên
+          suốt cuộc thi. <br> Đội chơi sẽ giành được số điểm đó khi giải
+          quyết
+          được
+          bài.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="sponsor-style" id="sponsor">
+    <div class="protect">
+      <h3>ĐƠN VỊ BẢO HỘ</h3>
+      <div class="line line-sponsor"></div>
+      <div class="protect-items">
+        <img src="./image/ptit.png" alt="PTIT" onclick="window.open(&quot;http://portal.ptit.edu.vn/&quot;)" data-aos="fade-right">
+        <img src="./image/doan.png" alt="Đoàn thanh niên" data-aos="fade-left">
+      </div>
+    </div>
+    <div class="protect">
+      <h3>BAN TỔ CHỨC</h3>
+      <div class="line line-sponsor"></div>
+      <div class="protect-items">
+        <img src="./image/proptit.png" alt="CLB Lập Trình PTIT" onclick="window.open(&quot;https://www.facebook.com/clubproptit/&quot;)" data-aos="flip-left">
+        <img src="./image/itclub.png" alt="CLB IT PTIT" onclick="window.open(&quot;https://www.facebook.com/ITPTIT/&quot;)" data-aos="flip-left">
+        <img src="./image/js.png" alt="CLB JS" onclick="window.open(&quot;https://www.facebook.com/fu.jsclub/&quot;)" data-aos="flip-left">
+        <img src="./image/tlu.png" alt="CLB Tin học Thăng Long" onclick="window.open(&quot;https://www.facebook.com/CLB.TinHoc.TLU/&quot;)" data-aos="flip-left">
+        <img src="./image/hamic.png" alt="CLB HAMIC" onclick="window.open(&quot;https://www.facebook.com/hamictoantin/&quot;)" data-aos="flip-left">
+      </div>
+    </div>
+    <div class="protect">
+      <h3>ĐƠN VỊ TÀI TRỢ</h3>
+      <div class="line line-sponsor"></div>
+      <div class="protect-items">
+        <img src="./image/vietis.png" alt="VIET IS" onclick="window.open(&quot;https://tuyendung.vietis.com.vn/&quot;)" data-aos="fade-down-right">
+        <img src="./image/viettel.png" alt="VIETTEL" onclick="window.open(&quot;https://vietteltelecom.vn/&quot;)" data-aos="fade-down">
+        <img src="./image/altplus.png" alt="ALTPLUS" onclick="window.open(&quot;https://altplus.com.vn/&quot;)" data-aos="fade-down-left">
+      </div>
+    </div>
+  </section>
+  <footer>
+    <h2>Code Battle 2020</h2>
+    <div class="view-us">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-google-plus" aria-hidden="true"></i>
+    </div>
+    <strong>Code Battle Vietnam | CLB Lập Trình PTIT</strong>
+    <strong>Copyright ©2020 CBVN Designed by <a href="https://www.facebook.com/tranvanthang2k/" target="_blank">tvthag</a></strong>
+  </footer>
+  <script src="https://kit.fontawesome.com/721ebd7c73.js" crossorigin="anonymous"></script>
+  <script src="./process.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+.intro-style, .rules-style {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7b728c;
+}
+
+.intro-style h3, .rules-style h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #0c53a9;
+  font-size: 48px;
+}
+
+.intro-content, .rules-content {
+  width: 70%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  position: relative;
+  padding-top: 70px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .intro-content, .rules-content {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-content, .rules-content {
+    width: 90%;
+  }
+  .intro-style h3, .rules-style h3 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .intro-content, .rules-content {
+    width: 100%;
+  }
+  .intro-style h3, .rules-style h3 {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,82 @@
+.round-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 70%;
+  height: auto;
+  color: #7b728c;
+  padding: 0px 20px;
+}
+
+.acm {
+  margin-right: 20px;
+}
+
+.acm h4, .ctf h4 {
+  text-align: center;
+  font-size: 22px;
+  color: #0c53a9;
+}
+
+.acm, .ctf {
+  flex: 1;
+  height: auto;
+  border-radius: 40px;
+  border: 1px solid #eff2f6;
+  padding: 40px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.round-style {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: white;
+  height: auto;
+  width: 100%;
+  position: relative;
+  padding-top: 70px;
+}
+
+.round-style h3 {
+  text-align: center;
+  color: #0c53a9;
+  font-size: 48px;
+}
+
+.acm i, .ctf i {
+  font-size: 50px;
+  color: #fb7639;
+}
+
+@media only screen and (max-width: 1024px) {
+  .round-content {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .round-content {
+    width: 90%;
+    flex-flow: column;
+  }
+
+  .acm {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .round-style h3 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .round-content {
+    width: 100%;
+  }
+  .round-style h3 {
+    font-size: 26px;
+  }
+}
