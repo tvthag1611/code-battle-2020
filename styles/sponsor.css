@@ -1,7 +1,7 @@
 .sponsor-style {
   width: 100%;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   align-items: center;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 30px -20px;
@@ -15,7 +15,7 @@
   width: 70%;
   position: relative;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   align-items: center;
 }
 
@@ -68,14 +68,17 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .sponsor-style {
+    padding: 20px;
+  }
   .sponsor-style .protect {
     width: 100%;
   }
   .protect h3 {
-    font-size: 26px;
+    font-size: 20px;
   }
   .line-sponsor {
-    top: 60px;
+    top: 50px;
   }
 
   .protect-items img {

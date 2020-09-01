@@ -25,13 +25,13 @@
   border: 1px solid #eff2f6;
   padding: 40px;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   align-items: center;
 }
 
 .round-style {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   align-items: center;
   background-color: white;
   height: auto;
